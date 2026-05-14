@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OX STUDIO | Premium Mobile Apps Portfolio</title>
+    <meta name="description"
+        content="Portfolio of premium Apple & Google apps by OX STUDIO. Discover tools and games designed with care.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Global Navigation -->
+    <nav class="global-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-logo">
+                    <img id="nav-logo-img" src="assets/alphabet-group-transparent.svg" alt="Alphabet Group">
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="#apps">Apps</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="mailto:alphabetstudio@proton.me">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="theme-switch-inline">
+                    <button class="theme-btn" id="theme-system" title="System Theme">
+                        <i data-lucide="monitor"></i>
+                    </button>
+                    <button class="theme-btn" id="theme-light" title="Light Theme">
+                        <i data-lucide="sun"></i>
+                    </button>
+                    <button class="theme-btn" id="theme-dark" title="Dark Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                </div>
+                <div class="lang-switch-inline">
+                    <button class="lang-btn" id="lang-btn" title="Change Language">
+                        <i data-lucide="languages"></i>
+                        <span id="current-lang-code">EN</span>
+                    </button>
+                    <div class="lang-menu" id="lang-menu">
+                        <button data-lang="en-US">English (US)</button>
+                        <button data-lang="en-GB">English (UK)</button>
+                        <button data-lang="zh-CN">简体中文</button>
+                        <button data-lang="zh-TW">繁體中文 (TW)</button>
+                        <button data-lang="zh-HK">繁體中文 (HK)</button>
+                    </div>
+                </div>
+                <button class="nav-icon" title="Search">
+                    <i data-lucide="search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Apple-style Minimal Background -->
+    <div class="mesh-bg">
+        <div class="blob" style="top: -10%; left: -10%;"></div>
+        <div class="blob" style="bottom: -10%; right: -10%;"></div>
+    </div>
+    <div id="cursor" aria-hidden="true"></div>
+
+    <div class="container">
+        <header>
+            <!-- Minimalist header without tagline -->
+        </header>
+        <main id="apps">
+            <!-- Hero Carousel -->
+            <section class="hero-carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- 1. imSubs -->
+                    <div class="carousel-slide">
+                        <article class="app-card hero-card production"
+                            data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.imsubs">
+                            <div class="app-preview-wrap">
+                                <img src="assets/images/imsubs/preview.png" class="app-preview"
+                                    onload="this.closest('.app-card').classList.add('has-preview')">
+                            </div>
+                            <div class="hero-content">
+                                <div class="app-icon-container"
+                                    style="background: linear-gradient(135deg, #4f46e5, #3730a3);">
+                                    <img src="assets/images/imsubs/icon.png" alt="imSubs Icon" class="app-icon loaded">
+                                </div>
+                                <h2 class="app-title">imSubs</h2>
+                                <p class="app-desc" data-i18n="app_imsubs_desc">Subscriptions & Costs & Days Matter &
+                                    Accounts & Medicines All-in-One.</p>
+                                <a class="app-link"
+                                    href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.imsubs"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Open imSubs on Play Store">
+                                    <span data-i18n="view_on_play_store">View on Play Store</span>
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- 2. App Hunting -->
+                    <div class="carousel-slide">
+                        <article class="app-card hero-card production"
+                            data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.apphunting">
+                            <div class="app-preview-wrap">
+                                <img src="assets/images/app_hunting/preview.png" class="app-preview"
+                                    onload="this.closest('.app-card').classList.add('has-preview')">
+                            </div>
+                            <div class="hero-content">
+                                <div class="app-icon-container"
+                                    style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
+                                    <img src="assets/images/app_hunting/icon.png" alt="App Hunting Icon"
+                                        class="app-icon loaded">
+                                </div>
+                                <h2 class="app-title">App Hunting</h2>
+                                <p class="app-desc" data-i18n="app_apphunting_desc">Explore Apps Globally. Pack the
+                                    Global App Store into your Android!</p>
+                                <a class="app-link"
+                                    href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.apphunting"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Open App Hunting on Play Store">
+                                    <span data-i18n="view_on_play_store">View on Play Store</span>
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- 3. Flash No. -->
+                    <div class="carousel-slide">
+                        <article class="app-card hero-card production"
+                            data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.flashnumber">
+                            <div class="app-preview-wrap">
+                                <img src="assets/images/flash_no/preview.png" class="app-preview"
+                                    onload="this.closest('.app-card').classList.add('has-preview')">
+                            </div>
+                            <div class="hero-content">
+                                <div class="app-icon-container"
+                                    style="background: linear-gradient(135deg, #ef4444, #b91c1c);">
+                                    <img src="assets/images/flash_no/icon.png" alt="Flash No. Icon"
+                                        class="app-icon loaded">
+                                </div>
+                                <h2 class="app-title">Flash No.</h2>
+                                <p class="app-desc" data-i18n="app_flashno_desc">Number Crush, Eliminate & Win. A
+                                    fast-paced test of speed and strategy.</p>
+                                <a class="app-link"
+                                    href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.flashnumber"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Open Flash No. on Play Store">
+                                    <span data-i18n="view_on_play_store">View on Play Store</span>
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- 4. Starry Pasture -->
+                    <div class="carousel-slide">
+                        <article class="app-card hero-card production"
+                            data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.starrypasture">
+                            <div class="app-preview-wrap">
+                                <img src="assets/images/starry_pasture/preview.png" class="app-preview"
+                                    onload="this.closest('.app-card').classList.add('has-preview')">
+                            </div>
+                            <div class="hero-content">
+                                <div class="app-icon-container"
+                                    style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                                    <img src="assets/images/starry_pasture/icon.png" alt="Starry Pasture Icon"
+                                        class="app-icon loaded">
+                                </div>
+                                <h2 class="app-title">Starry Pasture</h2>
+                                <p class="app-desc" data-i18n="app_starrypasture_desc">Solve brilliant logic puzzles and
+                                    place cows in the serene Starry Pasture!</p>
+                                <a class="app-link"
+                                    href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.starrypasture"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Open Starry Pasture on Play Store">
+                                    <span data-i18n="view_on_play_store">View on Play Store</span>
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" id="carousel-prev"><i data-lucide="chevron-left"></i></button>
+                    <div class="carousel-dots" id="carousel-dots"></div>
+                    <button class="carousel-btn next" id="carousel-next"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </section>
+
+            <div class="grid-tabs" role="tablist" aria-label="App category">
+                <button class="grid-tab active" type="button" role="tab" aria-selected="true" data-filter="all"
+                    data-i18n="grid_all">All</button>
+                <button class="grid-tab" type="button" role="tab" aria-selected="false" data-filter="app"
+                    data-i18n="grid_apps">Apps</button>
+                <button class="grid-tab" type="button" role="tab" aria-selected="false" data-filter="game"
+                    data-i18n="grid_games">Games</button>
+            </div>
+
+            <div class="app-grid">
+                <!-- 1. imSubs (Production) -->
+                <article class="app-card production" data-category="app"
+                    data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.imsubs">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/imsubs/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #4f46e5, #3730a3);">
+                        <i data-lucide="layout-dashboard" class="fallback-icon"></i>
+                        <img src="assets/images/imsubs/icon.png" alt="imSubs Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_production">Production</div>
+                    <h2 class="app-title">imSubs</h2>
+                    <p class="app-desc" data-i18n="app_imsubs_desc">Subscriptions & Costs & Days Matter & Accounts &
+                        Medicines All-in-One. Your personal life manager.</p>
+                    <a class="app-link"
+                        href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.imsubs"
+                        target="_blank" rel="noopener noreferrer" aria-label="Open imSubs on Play Store">
+                        <span data-i18n="view_on_play_store">View on Play Store</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </article>
+
+                <!-- 2. App Hunting (Production) -->
+                <article class="app-card production" data-category="app"
+                    data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.apphunting">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/app_hunting/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">
+                        <i data-lucide="search" class="fallback-icon"></i>
+                        <img src="assets/images/app_hunting/icon.png" alt="App Hunting Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_production">Production</div>
+                    <h2 class="app-title">App Hunting</h2>
+                    <p class="app-desc" data-i18n="app_apphunting_desc">Explore Apps Globally. Pack the Global App Store
+                        into your Android! Discover hidden
+                        gems.</p>
+                    <a class="app-link"
+                        href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.apphunting"
+                        target="_blank" rel="noopener noreferrer" aria-label="Open App Hunting on Play Store">
+                        <span data-i18n="view_on_play_store">View on Play Store</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </article>
+
+                <!-- 3. 2048 World (Testing) -->
+                <div class="app-card testing" data-category="game">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/2048_world/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <i data-lucide="grid-3x3" class="fallback-icon"></i>
+                        <img src="assets/images/2048_world/icon.png" alt="2048 World Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_testing">Testing</div>
+                    <h2 class="app-title">2048 <span class="masked">World</span></h2>
+                    <p class="app-desc" data-i18n="app_2048world_desc">A new dimension of the classic 2048 puzzle
+                        experience. Challenging and addictive.
+                    </p>
+                </div>
+
+                <!-- 4. Flash No. (Production) -->
+                <article class="app-card production" data-category="game"
+                    data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.flashnumber">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/flash_no/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #ef4444, #b91c1c);">
+                        <i data-lucide="zap" class="fallback-icon"></i>
+                        <img src="assets/images/flash_no/icon.png" alt="Flash No. Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_production">Production</div>
+                    <h2 class="app-title">Flash No.</h2>
+                    <p class="app-desc" data-i18n="app_flashno_desc">Flash No. Number Crush, Eliminate & Win. A
+                        fast-paced test of speed and strategy.
+                    </p>
+                    <a class="app-link"
+                        href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.flashnumber"
+                        target="_blank" rel="noopener noreferrer" aria-label="Open Flash No. on Play Store">
+                        <span data-i18n="view_on_play_store">View on Play Store</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </article>
+
+                <!-- 5. Best Costs (Dev) -->
+                <div class="app-card dev" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/best_costs/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+                        <i data-lucide="pie-chart" class="fallback-icon"></i>
+                        <img src="assets/images/best_costs/icon.png" alt="Best Costs Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Best <span class="masked">Costs</span></h2>
+                </div>
+
+                <!-- 6. Love Days (Dev) -->
+                <div class="app-card dev" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/love_days/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #ec4899, #be185d);">
+                        <i data-lucide="heart" class="fallback-icon"></i>
+                        <img src="assets/images/love_days/icon.png" alt="Love Days Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Love <span class="masked">Days</span></h2>
+                </div>
+
+                <!-- 7. Super Accounts (Dev) -->
+                <div class="app-card dev" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/super_accounts/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                        <i data-lucide="users" class="fallback-icon"></i>
+                        <img src="assets/images/super_accounts/icon.png" alt="Super Accounts Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Super <span class="masked">Accounts</span></h2>
+                </div>
+
+                <!-- 8. Chopper Medicines (Dev) -->
+                <div class="app-card dev" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/chopper_medicines/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #10b981, #047857);">
+                        <i data-lucide="pill" class="fallback-icon"></i>
+                        <img src="assets/images/chopper_medicines/icon.png" alt="Chopper Medicines Icon"
+                            class="app-icon" onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Chopper <span class="masked">Medicines</span></h2>
+                </div>
+
+                <!-- 9. Chameleon Color (Testing) -->
+                <div class="app-card testing" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/chameleon_color/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <i data-lucide="palette" class="fallback-icon"></i>
+                        <img src="assets/images/chameleon_color/icon.png" alt="Chameleon Color Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_testing">Testing</div>
+                    <h2 class="app-title">Chameleon <span class="masked">Color</span></h2>
+                    <p class="app-desc" data-i18n="app_chameleoncolor_desc">Identify and capture colors from your
+                        surroundings with ease. A tool for creators.
+                    </p>
+                </div>
+
+                <!-- 10. Starry Pasture (Production) -->
+                <article class="app-card production" data-category="game"
+                    data-store-url="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.starrypasture">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/starry_pasture/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                        <i data-lucide="sparkles" class="fallback-icon" style="color: #fbbf24;"></i>
+                        <img src="assets/images/starry_pasture/icon.png" alt="Starry Pasture Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_production">Production</div>
+                    <h2 class="app-title">Starry Pasture</h2>
+                    <p class="app-desc" data-i18n="app_starrypasture_desc">Solve brilliant logic puzzles and place cows
+                        in the serene Starry Pasture! Calm and
+                        engaging.</p>
+                    <a class="app-link"
+                        href="https://play.google.com/store/apps/details?id=com.alphabet.oxstudio.starrypasture"
+                        target="_blank" rel="noopener noreferrer" aria-label="Open Starry Pasture on Play Store">
+                        <span data-i18n="view_on_play_store">View on Play Store</span>
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </article>
+
+                <!-- 11. Zero Pieces (Dev) -->
+                <div class="app-card dev" data-category="game">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/zero_pieces/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #6b7280, #374151);">
+                        <i data-lucide="box" class="fallback-icon"></i>
+                        <img src="assets/images/zero_pieces/icon.png" alt="Zero Pieces Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Zero <span class="masked">Pieces</span></h2>
+                </div>
+
+                <!-- 12. TOP (Dev) -->
+                <div class="app-card dev" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/top_app/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #f59e0b, #b45309);">
+                        <i data-lucide="award" class="fallback-icon"></i>
+                        <img src="assets/images/top_app/icon.png" alt="TOP App Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">TOP <span class="masked">App</span></h2>
+                </div>
+
+                <!-- 13. imScanner (Testing) -->
+                <div class="app-card testing" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/imscanner/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #6366f1, #4f46e5);">
+                        <i data-lucide="scan" class="fallback-icon"></i>
+                        <img src="assets/images/imscanner/icon.png" alt="imScanner Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_testing">Testing</div>
+                    <h2 class="app-title no-gap">im<span class="masked">Scanner</span></h2>
+                    <p class="app-desc" data-i18n="app_imscanner_desc">Mobile document scanning made simple. Capture,
+                        clean, and share documents instantly.
+                    </p>
+                </div>
+
+                <!-- 14. Hurray (Dev) -->
+                <div class="app-card dev" data-category="app">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/hurray_banner/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #ef4444, #991b1b);">
+                        <i data-lucide="flag" class="fallback-icon"></i>
+                        <img src="assets/images/hurray_banner/icon.png" alt="Hurray Banner Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge app-type" data-i18n="type_app">App</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Hurray <span class="masked">Banner</span></h2>
+                </div>
+
+                <!-- 15. Puzzle Play (Dev) -->
+                <div class="app-card dev" data-category="game">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/puzzle_play/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #6366f1, #4338ca);">
+                        <i data-lucide="puzzle" class="fallback-icon"></i>
+                        <img src="assets/images/puzzle_play/icon.png" alt="Puzzle Play Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Puzzle <span class="masked">Play</span></h2>
+                </div>
+
+                <!-- 16. Diff Buff (Dev) -->
+                <div class="app-card dev" data-category="game">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/diff_buff/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #84cc16, #4d7c0f);">
+                        <i data-lucide="layers" class="fallback-icon"></i>
+                        <img src="assets/images/diff_buff/icon.png" alt="Diff Buff Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Diff <span class="masked">Buff</span></h2>
+                </div>
+            </div>
+        </main>
+
+        <section class="philosophy" id="philosophy">
+            <h2 data-i18n="phi_title">Our Philosophy</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <h3 data-i18n="phi_min_h">Minimalist Design</h3>
+                    <p data-i18n="phi_min_p">We believe that less is more. Our apps are designed to be intuitive and
+                        clean, removing
+                        distractions so you can focus on what matters.</p>
+                </div>
+                <div class="philosophy-item">
+                    <h3 data-i18n="phi_priv_h">Privacy First</h3>
+                    <p data-i18n="phi_priv_p">Your data belongs to you. We build with a privacy-first mindset, ensuring
+                        that your information
+                        stays local whenever possible.</p>
+                </div>
+                <div class="philosophy-item">
+                    <h3 data-i18n="phi_prem_h">Premium Quality</h3>
+                    <p data-i18n="phi_prem_p">Every pixel and interaction is crafted with care. We don't just build
+                        apps; we build experiences
+                        that feel premium and polished.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="assets/alphabet-group-transparent.svg" id="footer-logo-img" class="brand-logo"
+                    alt="OX STUDIO">
+                <p class="footer-tagline-main" data-i18n="tagline">Crafting minimalist, powerful, and beautiful
+                    experiences for Apple & Google.</p>
+            </div>
+            <p>&copy; <span id="year"></span> OX STUDIO. <span data-i18n="footer_copy">All rights reserved.</span></p>
+            <div class="footer-links">
+                <a href="mailto:alphabetstudio@proton.me" data-i18n="footer_link_contact">Contact Us</a>
+                <span class="dot">·</span>
+                <a href="https://play.google.com/store/apps/developer?id=Alphabet+Studio" target="_blank"
+                    data-i18n="footer_link_gp">Google Play</a>
+                <span class="dot">·</span>
+                <a href="#" target="_blank" data-i18n="footer_link_as">App Store</a>
+            </div>
+            <p style="margin-top: 16px; font-size: 0.8rem; opacity: 0.6;" data-i18n="footer_tagline">Designed with care
+                for the Apple & Google.</p>
+            <p class="version-tag">AT-2524-149088-0799 build-<span id="version-date">260514</span>-01</p>
+        </footer>
+    </div>
+
+    <script>
+        // Logo Switching Logic
+        const logoPaths = [
+            'assets/logos/alphabet-group-01-apple-gallery.svg',
+            'assets/logos/alphabet-group-03-editorial-serif.svg',
+            'assets/logos/alphabet-group-04-rounded-tech.svg'
+        ];
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Translations
+        const translations = {
+            'en-US': {
+                'tagline': 'Crafting minimalist, powerful, and beautiful experiences for Apple & Google.',
+                'grid_all': 'All',
+                'grid_apps': 'Apps',
+                'grid_games': 'Games',
+                'type_app': 'App',
+                'type_game': 'Game',
+                'app_imsubs_desc': 'Subscriptions & Costs & Days Matter & Accounts & Medicines All-in-One. Your personal life manager.',
+                'app_apphunting_desc': 'Explore Apps Globally. Pack the Global App Store into your Android! Discover hidden gems.',
+                'app_2048world_desc': 'A new dimension of the classic 2048 puzzle experience. Challenging and addictive.',
+                'app_flashno_desc': 'Flash No. Number Crush, Eliminate & Win. A fast-paced test of speed and strategy.',
+                'app_chameleoncolor_desc': 'Identify and capture colors from your surroundings with ease. A tool for creators.',
+                'app_starrypasture_desc': 'Solve brilliant logic puzzles and place cows in the serene Starry Pasture! Calm and engaging.',
+                'app_imscanner_desc': 'Mobile document scanning made simple. Capture, clean, and share documents instantly.',
+                'status_production': 'Production',
+                'status_testing': 'Testing',
+                'status_dev': 'Dev',
+                'view_on_play_store': 'View on Play Store',
+                'phi_title': 'Our Philosophy',
+                'phi_min_h': 'Minimalist Design',
+                'phi_min_p': 'We believe that less is more. Our apps are designed to be intuitive and clean, removing distractions so you can focus on what matters.',
+                'phi_priv_h': 'Privacy First',
+                'phi_priv_p': 'Your data belongs to you. We build with a privacy-first mindset, ensuring that your information stays local whenever possible.',
+                'phi_prem_h': 'Premium Quality',
+                'phi_prem_p': 'Every pixel and interaction is crafted with care. We don\'t just build apps; we build experiences that feel premium and polished.',
+                'footer_copy': 'All rights reserved.',
+                'footer_link_contact': 'Contact Us',
+                'footer_link_gp': 'Google Play',
+                'footer_link_as': 'App Store',
+                'footer_tagline': 'Designed with care for the Apple & Google.'
+            },
+            'en-GB': {
+                'tagline': 'Crafting minimalist, powerful, and beautiful experiences for Apple & Google.',
+                'grid_all': 'All',
+                'grid_apps': 'Apps',
+                'grid_games': 'Games',
+                'type_app': 'App',
+                'type_game': 'Game',
+                'app_imsubs_desc': 'Subscriptions & Costs & Days Matter & Accounts & Medicines All-in-One. Your personal life manager.',
+                'app_apphunting_desc': 'Explore Apps Globally. Pack the Global App Store into your Android! Discover hidden gems.',
+                'app_2048world_desc': 'A new dimension of the classic 2048 puzzle experience. Challenging and addictive.',
+                'app_flashno_desc': 'Flash No. Number Crush, Eliminate & Win. A fast-paced test of speed and strategy.',
+                'app_chameleoncolor_desc': 'Identify and capture colours from your surroundings with ease. A tool for creators.',
+                'app_starrypasture_desc': 'Solve brilliant logic puzzles and place cows in the serene Starry Pasture! Calm and engaging.',
+                'app_imscanner_desc': 'Mobile document scanning made simple. Capture, clean, and share documents instantly.',
+                'status_production': 'Production',
+                'status_testing': 'Testing',
+                'status_dev': 'Dev',
+                'view_on_play_store': 'View on Play Store',
+                'phi_title': 'Our Philosophy',
+                'phi_min_h': 'Minimalist Design',
+                'phi_min_p': 'We believe that less is more. Our apps are designed to be intuitive and clean, removing distractions so you can focus on what matters.',
+                'phi_priv_h': 'Privacy First',
+                'phi_priv_p': 'Your data belongs to you. We build with a privacy-first mindset, ensuring that your information stays local whenever possible.',
+                'phi_prem_h': 'Premium Quality',
+                'phi_prem_p': 'Every pixel and interaction is crafted with care. We don\'t just build apps; we build experiences that feel premium and polished.',
+                'footer_copy': 'All rights reserved.',
+                'footer_link_contact': 'Contact Us',
+                'footer_link_gp': 'Google Play',
+                'footer_link_as': 'App Store',
+                'footer_tagline': 'Designed with care for the Apple & Google.'
+            },
+            'zh-CN': {
+                'tagline': '为 Apple 和 Google 打造极简、强大且美观的体验。',
+                'grid_all': 'All',
+                'grid_apps': 'Apps',
+                'grid_games': 'Games',
+                'type_app': 'App',
+                'type_game': 'Game',
+                'app_imsubs_desc': '订阅管理、记账、倒数日、账号管理、药品管理，全能个人生活助手。',
+                'app_apphunting_desc': '全球应用探索。将全球应用商店装进你的安卓！发现隐藏的宝藏。',
+                'app_2048world_desc': '经典 2048 益智体验的新维度。充满挑战，令人爱不释手。',
+                'app_flashno_desc': '数字粉碎，消除与获胜。一场速度与策略的快节奏测试。',
+                'app_chameleoncolor_desc': '轻松识别并捕捉周围环境中的颜色。创作者的得力工具。',
+                'app_starrypasture_desc': '解开精妙的逻辑谜题，在宁静的星空牧场安放奶牛！宁静而迷人。',
+                'app_imscanner_desc': '移动文档扫描变得简单。即时捕捉、清理并共享文档。',
+                'status_production': 'Production',
+                'status_testing': '测试中',
+                'status_dev': '开发中',
+                'view_on_play_store': '在 Play 商店查看',
+                'phi_title': '我们的哲学',
+                'phi_min_h': '极简设计',
+                'phi_min_p': '我们相信少即是多。我们的应用设计直观且整洁，去除干扰，让您专注于重要的事情。',
+                'phi_priv_h': '隐私至上',
+                'phi_priv_p': '您的数据属于您。我们秉持隐私优先的心态进行构建，确保您的信息尽可能保留在本地。',
+                'phi_prem_h': '卓越品质',
+                'phi_prem_p': '每一个像素和交互都经过精心打造。我们不只是构建应用；我们构建的是感觉高端且精致的体验。',
+                'footer_copy': '保留所有权利。',
+                'footer_link_contact': '联系我们',
+                'footer_link_gp': 'Google Play',
+                'footer_link_as': 'App Store',
+                'footer_tagline': '为 Apple 和 Google 社区精心设计。'
+            },
+            'zh-TW': {
+                'tagline': '為 Apple 和 Google 打造極簡、強大且美觀的體驗。',
+                'grid_all': 'All',
+                'grid_apps': 'Apps',
+                'grid_games': 'Games',
+                'type_app': 'App',
+                'type_game': 'Game',
+                'app_imsubs_desc': '訂閱管理、記賬、倒數日、賬號管理、藥品管理，全能個人生活助手。',
+                'app_apphunting_desc': '全球應用探索。將全球應用商店裝進你的安卓！發現隱藏的寶藏。',
+                'app_2048world_desc': '經典 2048 益智體驗的新維度。充滿挑戰，令人愛不釋手。',
+                'app_flashno_desc': '數字粉碎，消除與獲勝。一場速度與策略的快節奏測試。',
+                'app_chameleoncolor_desc': '輕鬆識別並捕捉周圍環境中的顏色。創作者的得力工具。',
+                'app_starrypasture_desc': '解開精妙的邏輯謎題，在寧靜的星空牧場安放奶牛！寧靜而迷人。',
+                'app_imscanner_desc': '移動文檔掃描變得簡單。即時捕捉、清理並共享文檔。',
+                'status_production': 'Production',
+                'status_testing': '測試中',
+                'status_dev': '開發中',
+                'view_on_play_store': '在 Play 商店查看',
+                'phi_title': '我們的哲學',
+                'phi_min_h': '極簡設計',
+                'phi_min_p': '我們相信少即是多。我們的應用設計直觀且整潔，去除干擾，讓您專注於重要的事情。',
+                'phi_priv_h': '隱私至上',
+                'phi_priv_p': '您的數據屬於您。我們秉持隱私優先的心態進行構建，確保您的信息盡可能保留在本地。',
+                'phi_prem_h': '卓越品質',
+                'phi_prem_p': '每一個像素和交互都經過精心打造。我們不只是構建應用；我們構建的是感覺高端且精緻的體驗。',
+                'footer_copy': '保留所有權利。',
+                'footer_link_contact': '聯繫我們',
+                'footer_link_gp': 'Google Play',
+                'footer_link_as': 'App Store',
+                'footer_tagline': '為 Apple 和 Google 社區精心設計。'
+            },
+            'zh-HK': {
+                'tagline': '為 Apple 和 Google 打造極簡、強大且美觀的體驗。',
+                'grid_all': 'All',
+                'grid_apps': 'Apps',
+                'grid_games': 'Games',
+                'type_app': 'App',
+                'type_game': 'Game',
+                'app_imsubs_desc': '訂閱管理、記賬、倒數日、賬號管理、藥品管理，全能個人生活助手。',
+                'app_topapp_title_masked': '應用',
+                'app_imscanner_title_masked': '掃描',
+                'app_imscanner_desc': '移動文檔掃描變得簡單。即時捕捉、清理並共享文檔。',
+                'app_hurraybanner_title_masked': '橫幅',
+                'app_puzzleplay_title_masked': '拼圖',
+                'app_diffbuff_title_masked': '找茬',
+                'status_production': 'Production',
+                'status_testing': '測試中',
+                'status_dev': '開發中',
+                'view_on_play_store': '在 Play 商店查看',
+                'phi_title': '我們的哲學',
+                'phi_min_h': '極簡設計',
+                'phi_min_p': '我們相信少即是多。我們的應用設計直觀且整潔，去除干擾，讓您專注於重要的事情。',
+                'phi_priv_h': '隱私至上',
+                'phi_priv_p': '您的數據屬於您。我們秉持隱私優先的心態進行構建，確保您的信息盡可能保留在本地。',
+                'phi_prem_h': '卓越品質',
+                'phi_prem_p': '每一個像素和交互都經過精心打造。我們不只是構建應用；我們構建的是感覺高端且精緻的體驗。',
+                'footer_copy': '保留所有權利。',
+                'footer_link_contact': '聯繫我們',
+                'footer_link_gp': 'Google Play',
+                'footer_link_as': 'App Store',
+                'footer_tagline': '為 Apple 和 Google 社區精心設計。'
+            }
+        };
+
+        // Theme Handling
+        const themeBtns = {
+            system: document.getElementById('theme-system'),
+            light: document.getElementById('theme-light'),
+            dark: document.getElementById('theme-dark')
+        };
+
+        const setTheme = (theme) => {
+            const root = document.documentElement;
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const navLogoImg = document.getElementById('nav-logo-img');
+            const headerLogoImg = document.getElementById('header-logo');
+
+            const isDarkNow = theme === 'dark' || (theme === 'system' && systemDark);
+            const logoSrc = isDarkNow ? 'assets/alphabet-group-black.svg' : (theme === 'system' ? 'assets/alphabet-group-transparent.svg' : 'assets/alphabet-group-white.svg');
+
+            if (theme === 'system') {
+                root.removeAttribute('data-theme');
+                localStorage.removeItem('theme');
+            } else {
+                root.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+            }
+
+            if (navLogoImg) navLogoImg.src = logoSrc;
+            const footerLogoImg = document.getElementById('footer-logo-img');
+            if (footerLogoImg) footerLogoImg.src = logoSrc;
+
+            // Update active state
+            Object.keys(themeBtns).forEach(key => {
+                themeBtns[key].classList.toggle('active',
+                    (theme === 'system' && key === 'system') ||
+                    (theme === key)
+                );
+            });
+        };
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            if (!localStorage.getItem('theme')) {
+                setTheme('system');
+            }
+        });
+
+        // Event listeners
+        themeBtns.system.addEventListener('click', () => setTheme('system'));
+        themeBtns.light.addEventListener('click', () => setTheme('light'));
+        themeBtns.dark.addEventListener('click', () => setTheme('dark'));
+
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme') || 'system';
+        setTheme(savedTheme);
+
+        // Language Management
+        const langBtn = document.getElementById('lang-btn');
+        const langMenu = document.getElementById('lang-menu');
+        const currentLangDisplay = document.getElementById('current-lang-code');
+
+        const updateLanguage = (lang) => {
+            const elements = document.querySelectorAll('[data-i18n]');
+
+            // Smooth fade transition for text
+            elements.forEach(el => el.style.opacity = '0');
+
+            setTimeout(() => {
+                elements.forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (translations[lang] && translations[lang][key]) {
+                        el.textContent = translations[lang][key];
+                    }
+                    el.style.opacity = '1';
+                });
+
+                const displayCode = lang.split('-')[0].toUpperCase();
+                if (currentLangDisplay) currentLangDisplay.textContent = displayCode;
+
+                localStorage.setItem('lang', lang);
+                document.documentElement.lang = lang;
+
+                // Update active state in menu
+                if (langMenu) {
+                    langMenu.querySelectorAll('button').forEach(btn => {
+                        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+                    });
+                }
+            }, 300);
+        };
+
+        const savedLang = localStorage.getItem('lang') || 'en-US';
+        updateLanguage(savedLang);
+
+        if (langBtn) {
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langMenu.classList.toggle('show');
+            });
+        }
+
+        if (langMenu) {
+            langMenu.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const lang = btn.getAttribute('data-lang');
+                    updateLanguage(lang);
+                    langMenu.classList.remove('show');
+                });
+            });
+        }
+
+        document.addEventListener('click', () => {
+            if (langMenu) langMenu.classList.remove('show');
+        });
+
+        // Update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Update Version Date (YYMMDD)
+        const versionDateEl = document.getElementById('version-date');
+        if (versionDateEl) {
+            const now = new Date();
+            const yy = String(now.getFullYear()).slice(-2);
+            const mm = String(now.getMonth() + 1).padStart(2, '0');
+            const dd = String(now.getDate()).padStart(2, '0');
+            versionDateEl.textContent = `${yy}${mm}${dd}`;
+        }
+
+        // Carousel Logic
+        const track = document.getElementById('carousel-track');
+        if (track) {
+            const slides = Array.from(track.children);
+            const nextBtn = document.getElementById('carousel-next');
+            const prevBtn = document.getElementById('carousel-prev');
+            const dotsNav = document.getElementById('carousel-dots');
+
+            let currentIndex = 0;
+
+            slides.forEach((_, i) => {
+                const dot = document.createElement('div');
+                dot.classList.add('carousel-dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => moveToSlide(i));
+                dotsNav.appendChild(dot);
+            });
+
+            const dots = Array.from(dotsNav.children);
+
+            const moveToSlide = (index) => {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                currentIndex = index;
+                track.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+            };
+
+            if (nextBtn) nextBtn.addEventListener('click', () => moveToSlide(currentIndex + 1));
+            if (prevBtn) prevBtn.addEventListener('click', () => moveToSlide(currentIndex - 1));
+
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let carouselInterval = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+                ? null
+                : setInterval(() => moveToSlide(currentIndex + 1), 5000);
+
+            const restartCarousel = () => {
+                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+                clearInterval(carouselInterval);
+                carouselInterval = setInterval(() => moveToSlide(currentIndex + 1), 5000);
+            };
+
+            [track, nextBtn, prevBtn, dotsNav].forEach(el => {
+                if (el) {
+                    el.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+                    el.addEventListener('mouseleave', restartCarousel);
+                }
+            });
+
+            track.addEventListener('touchstart', e => {
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                clearInterval(carouselInterval);
+            }, { passive: true });
+
+            track.addEventListener('touchend', e => {
+                const dx = e.changedTouches[0].clientX - touchStartX;
+                const dy = e.changedTouches[0].clientY - touchStartY;
+                if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy)) {
+                    moveToSlide(currentIndex + (dx < 0 ? 1 : -1));
+                }
+                restartCarousel();
+            }, { passive: true });
+        }
+
+        // Grid Category Tabs
+        const gridTabs = document.querySelectorAll('.grid-tab');
+        const gridTabsWrap = document.querySelector('.grid-tabs');
+        const gridCards = document.querySelectorAll('.app-grid .app-card');
+
+        const setGridFilter = (filter) => {
+            const tabIndex = filter === 'game' ? '2' : (filter === 'app' ? '1' : '0');
+            gridTabsWrap?.style.setProperty('--tab-index', tabIndex);
+            gridTabsWrap?.setAttribute('data-active', filter);
+
+            gridTabs.forEach(tab => {
+                const active = tab.dataset.filter === filter;
+                tab.classList.toggle('active', active);
+                tab.setAttribute('aria-selected', active ? 'true' : 'false');
+            });
+
+            gridCards.forEach(card => {
+                const visible = filter === 'all' || card.dataset.category === filter;
+                card.classList.toggle('is-filtered-out', !visible);
+                card.setAttribute('aria-hidden', visible ? 'false' : 'true');
+            });
+        };
+
+        gridTabs.forEach(tab => {
+            tab.addEventListener('click', () => setGridFilter(tab.dataset.filter || 'app'));
+        });
+
+        setGridFilter('all');
+
+        // Custom Cursor
+        const cursor = document.getElementById('cursor');
+        const blobs = document.querySelectorAll('.blob');
+        const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+        document.addEventListener('mousemove', e => {
+            if (cursor) {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            }
+
+            // Background Interaction
+            const x = (e.clientX / window.innerWidth - 0.5) * 50;
+            const y = (e.clientY / window.innerHeight - 0.5) * 50;
+            blobs.forEach((blob, i) => {
+                const factor = (i + 1) * 0.5;
+                blob.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+            });
+        });
+
+        // Scroll Reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Add spotlight and hover effects
+        const cards = document.querySelectorAll('.app-card');
+        cards.forEach(card => {
+            const isHeroCard = card.classList.contains('hero-card');
+            revealObserver.observe(card);
+
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                // Spotlight
+                card.style.setProperty('--x', `${x}px`);
+                card.style.setProperty('--y', `${y}px`);
+
+                if (isHeroCard || !canHover || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+                // Tilt
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                card.style.transform = `perspective(1000px) translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                if (isHeroCard || !canHover) return;
+                card.style.transform = `perspective(1000px) translateY(0) rotateX(0) rotateY(0)`;
+            });
+
+            card.addEventListener('mouseenter', () => {
+                if (cursor) cursor.classList.add('hovered');
+            });
+            card.addEventListener('mouseleave', () => {
+                if (cursor) cursor.classList.remove('hovered');
+            });
+        });
+
+        // Refined pointer feedback for explicit actions.
+        const links = document.querySelectorAll('.footer-links a, .nav-center a, .nav-logo, .app-link, button');
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                if (cursor) cursor.classList.add('hovered');
+            });
+            link.addEventListener('mouseleave', () => {
+                if (cursor) cursor.classList.remove('hovered');
+            });
+        });
+    </script>
+</body>
+
+</html>
