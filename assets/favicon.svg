@@ -1,0 +1,23 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Premium Favicon for Alphabet Group / OX STUDIO -->
+  <defs>
+    <linearGradient id="leg-blue" x1="16" y1="4" x2="6" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19B8FF"/>
+      <stop offset="1" stop-color="#0066CC"/>
+    </linearGradient>
+    <linearGradient id="leg-dark" x1="16" y1="4" x2="26" y2="28" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D1D1F"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- The 'A' Mark -->
+  <path d="M16 4L6 28" stroke="url(#leg-blue)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M16 4L26 28" stroke="url(#leg-dark)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M9 19H23" stroke="#00D2A8" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Compass Pivot -->
+  <circle cx="16" cy="6" r="4.5" fill="#D6A84A"/>
+  <circle cx="16" cy="6" r="3" fill="none" stroke="#FFE6A3" stroke-width="1"/>
+  <circle cx="16" cy="6" r="1" fill="#FFFFFF"/>
+</svg>

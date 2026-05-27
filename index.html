@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -518,6 +520,24 @@
                 </div>
 
                 <!-- 16. Diff Buff (Dev) -->
+                <div class="app-card dev" data-category="game">
+                    <div class="spotlight"></div>
+                    <div class="app-preview-wrap">
+                        <img src="assets/images/puzzle_arrows/preview.png" class="app-preview"
+                            onerror="this.parentElement.style.display='none'"
+                            onload="this.closest('.app-card').classList.add('has-preview')">
+                    </div>
+                    <div class="app-icon-container" style="background: linear-gradient(135deg, #06b6d4, #2563eb);">
+                        <i data-lucide="move-diagonal" class="fallback-icon"></i>
+                        <img src="assets/images/puzzle_arrows/icon.png" alt="Puzzle Arrows Icon" class="app-icon"
+                            onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="type-badge game-type" data-i18n="type_game">Game</div>
+                    <div class="status-badge" data-i18n="status_dev">Dev</div>
+                    <h2 class="app-title">Puzzle <span class="masked">Arrows</span></h2>
+                </div>
+
+                <!-- 17. Diff Buff (Dev) -->
                 <div class="app-card dev" data-category="game">
                     <div class="spotlight"></div>
                     <div class="app-preview-wrap">
