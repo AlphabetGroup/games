@@ -2166,3 +2166,21 @@ body::before {
     opacity: 0.5;
     transform: translateY(-1px);
 }
+
+/* Three.js Canvas Backdrop */
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    transition: opacity 1.2s ease;
+    opacity: 0; /* starts hidden and fades in when loaded */
+}
+
+/* Ensure mesh background stays behind canvas */
+.mesh-bg {
+    z-index: -2 !important;
+}
